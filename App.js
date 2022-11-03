@@ -7,6 +7,5 @@ import Navigation from "./src/navigations/Navigation.js";
 function App() {
   return <Navigation />;
 }
-AppRegistry.registerComponent("main", () => App);
 
 export default App;

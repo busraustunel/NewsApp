@@ -12,7 +12,13 @@ export default function Navigation() {
     <NavigationContainer>
       <Stack.Navigator initialRouteName="Home">
         <Stack.Screen name="Home" component={HomeScreen} />
-        <Stack.Screen name="Details" component={DetailsScreen} />
+        <Stack.Screen
+          name="Details"
+          component={DetailsScreen}
+          options={({ route }) => ({
+            title: route.params.category,
+          })}
+        />
       </Stack.Navigator>
     </NavigationContainer>
   );

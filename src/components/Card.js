@@ -1,13 +1,21 @@
 import React from "react";
-import { View, Text, StyleSheet } from "react-native";
+import { View, Text, TouchableOpacity } from "react-native";
 import styles from "../../assets/styles/styles";
 
-const Card = ({ info }) => {
-  const { name, title } = info;
+const Card = ({ info, navigation }) => {
+  const { title } = info;
   return (
-    <View style={styles.card}>
-      <Text style={styles.textStyle}>{title}</Text>
-    </View>
+    <TouchableOpacity
+      onPress={() =>
+        navigation.navigate("Details", {
+          category: title.toLowerCase(),
+        })
+      }
+    >
+      <View style={styles.card}>
+        <Text style={styles.textStyle}>{title}</Text>
+      </View>
+    </TouchableOpacity>
   );
 };
 

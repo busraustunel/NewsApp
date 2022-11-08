@@ -1,9 +1,9 @@
 import React from "react";
-import { View, Text, TouchableOpacity } from "react-native";
+import { View, Text, TouchableOpacity, Image } from "react-native";
 import styles from "../../assets/styles/styles";
 
 const Card = ({ info, navigation }) => {
-  const { title } = info;
+  const { title, imageUrl } = info;
   return (
     <TouchableOpacity
       onPress={() =>
@@ -12,8 +12,9 @@ const Card = ({ info, navigation }) => {
         })
       }
     >
-      <View style={styles.card}>
+      <View style={styles.categoryCard}>
         <Text style={styles.textStyle}>{title}</Text>
+        <Image style={styles.image} source={{ uri: imageUrl }}></Image>
       </View>
     </TouchableOpacity>
   );

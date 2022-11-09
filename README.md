@@ -1,2 +1,1 @@
-# NewsApp
-react native news app
+# REACT NATIVE NEWS APP

@@ -5,5 +5,9 @@ In this project I developed a new Mobile Application with React Native. The UI i
 ### INSHORT API
 I used Unofficial InShorts News API for collecting news information.
 
+<img src="https://github.com/busraustunel/NewsApp/blob/master/assets/img/11.jpeg" width="250" height="444" />
+
+<img src="https://github.com/busraustunel/NewsApp/blob/master/assets/img/2.jpeg" width="250" height="444" />
+
 
 
